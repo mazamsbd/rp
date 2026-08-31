@@ -64,7 +64,7 @@
             margin: auto;
         }
 
-        /================= NAVIGATION =================/
+        /* ================= NAVIGATION ================= */
 
         nav {
             position: fixed;
@@ -115,7 +115,7 @@
             cursor: pointer;
         }
 
-        /================= HERO =================/
+        /* ================= HERO ================= */
 
         .hero {
             min-height: 100vh;
@@ -237,7 +237,7 @@
             font-size: 0.9rem;
         }
 
-        / ================= SECTIONS ================= /
+        /* ================= SECTIONS ================= */
 
         section {
             padding: 90px 0;
@@ -269,7 +269,7 @@
             color: var(--light-text);
         }
 
-        /================= ABOUT ================= /
+        /* ================= ABOUT ================= */
 
         .about-grid {
             display: grid;
@@ -305,7 +305,7 @@
             color: var(--dark);
         }
 
-        /================= EXPERIENCE =================/
+        /* ================= EXPERIENCE ================= */
 
         .timeline {
             position: relative;
@@ -356,7 +356,7 @@
             font-weight: 600;
         }
 
-        /================= PUBLICATIONS =================/
+        /* ================= PUBLICATIONS ================= */
 
         .publication {
             background: white;
@@ -411,7 +411,7 @@
             font-size: 1.5rem;
         }
 
-        /================= PATENTS =================/
+        /* ================= PATENTS ================= */
 
         .patent-grid {
             display: grid;
@@ -443,7 +443,7 @@
             color: var(--light-text);
         }
 
-        /================= SKILLS =================/
+        /* ================= SKILLS ================= */
 
         .skills-grid {
             display: grid;
@@ -478,7 +478,7 @@
             font-weight: 600;
         }
 
-        /================= AWARDS =================/
+        /* ================= AWARDS ================= */
 
         .award-grid {
             display: grid;
@@ -505,7 +505,7 @@
             font-size: 1rem;
         }
 
-        /================= STATS =================/
+        /* ================= STATS ================= */
 
         .stats {
             background: var(--dark);
@@ -529,7 +529,7 @@
             font-size: 0.9rem;
         }
 
-        /================= REVIEW =================/
+        /* ================= REVIEW ================= */
 
         .review-box {
             max-width: 850px;
@@ -547,7 +547,7 @@
             margin-bottom: 15px;
         }
 
-        /================= CONTACT =================/
+        /* ================= CONTACT ================= */
 
         .contact {
             background: #eef6ff;
@@ -605,7 +605,7 @@
             color: white;
         }
 
-        /================= FOOTER =================/
+        /* ================= FOOTER ================= */
 
         footer {
             background: #0b1120;
@@ -619,7 +619,7 @@
             color: white;
         }
 
-        /================= RESPONSIVE =================/
+        /* ================= RESPONSIVE ================= */
 
         @media (max-width: 900px) {
 
