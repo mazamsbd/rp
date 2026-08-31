@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Md Abu Zafar Al Munsur | Researcher</title>
+
+    <meta name="description"
+          content="Academic website of Dr. Md Abu Zafar Al Munsur, researcher in polymer electrolyte membranes, hydrogen energy, fuel cells and water electrolysis.">
+
+    <meta name="author" content="Md Abu Zafar Al Munsur">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        :root {
+            --primary: #0b5ed7;
+            --primary-dark: #063b88;
+            --secondary: #0f766e;
+            --dark: #111827;
+            --text: #374151;
+            --light-text: #6b7280;
+            --background: #f8fafc;
+            --white: #ffffff;
+            --border: #e5e7eb;
+            --card-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
+            --max-width: 1180px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            color: var(--text);
+            background: var(--background);
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            width: min(92%, var(--max-width));
+            margin: auto;
+        }
+
+        /* ================= NAVIGATION ================= */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 16px 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #374151;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 90px;
+            background:
+                linear-gradient(135deg, #eef6ff 0%, #ffffff 55%, #ecfdf5 100%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-label {
+            display: inline-block;
+            color: var(--primary);
+            background: #e8f1ff;
+            padding: 7px 14px;
+            border-radius: 30px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(2.8rem, 6vw, 5rem);
+            line-height: 1.08;
+            color: var(--dark);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 720px;
+            font-size: 1.05rem;
+            color: var(--light-text);
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--border);
+            background: white;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .hero-card {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border);
+        }
+
+        .hero-card .profile-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-card h3 {
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .hero-card p {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        /* ================= SECTIONS ================= */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-title span {
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-title h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-top: 8px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 10px auto;
+            color: var(--light-text);
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+        }
+
+        .about-card {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            border: 1px solid var(--border);
+            box-shadow: var(--card-shadow);
+        }
+
+        .about-card h3 {
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+
+        .research-list {
+            display: grid;
+            gap: 14px;
+        }
+
+        .research-item {
+            padding: 15px;
+            border-left: 4px solid var(--primary);
+            background: #f8fafc;
+        }
+
+        .research-item strong {
+            color: var(--dark);
+        }
+
+        /* ================= EXPERIENCE ================= */
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: #dbeafe;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 55px;
+            margin-bottom: 45px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 6px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary);
+            border: 4px solid #dbeafe;
+        }
+
+        .timeline-item h3 {
+            color: var(--dark);
+            font-size: 1.15rem;
+        }
+
+        .timeline-item .date {
+            color: var(--primary);
+            font-size: 0.88rem;
+            font-weight: 700;
+            margin: 4px 0;
+        }
+
+        .timeline-item .institution {
+            font-weight: 600;
+        }
+
+        /* ================= PUBLICATIONS ================= */
+
+        .publication {
+            background: white;
+            padding: 25px 30px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: 0.3s;
+        }
+
+        .publication:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--card-shadow);
+        }
+
+        .publication-number {
+            color: var(--primary);
+            font-weight: 800;
+            margin-right: 8px;
+        }
+
+        .publication h3 {
+            display: inline;
+            color: var(--dark);
+            font-size: 1rem;
+        }
+
+        .journal {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        .doi {
+            display: inline-block;
+            margin-top: 8px;
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .doi:hover {
+            text-decoration: underline;
+        }
+
+        .pub-section {
+            margin-bottom: 45px;
+        }
+
+        .pub-section h3 {
+            color: var(--dark);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* ================= PATENTS ================= */
+
+        .patent-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .patent {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .patent i {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+
+        .patent h3 {
+            font-size: 1rem;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .patent p {
+            font-size: 0.88rem;
+            color: var(--light-text);
+        }
+
+        /* ================= SKILLS ================= */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .skill-card h3 {
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: #eef6ff;
+            color: var(--primary-dark);
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 600;
+        }
+
+        /* ================= AWARDS ================= */
+
+        .award-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .award {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            display: flex;
+            gap: 18px;
+        }
+
+        .award i {
+            color: #d4a017;
+            font-size: 1.7rem;
+        }
+
+        .award h3 {
+            color: var(--dark);
+            font-size: 1rem;
+        }
+
+        /* ================= STATS ================= */
+
+        .stats {
+            background: var(--dark);
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat h3 {
+            font-size: 2.5rem;
+            color: #60a5fa;
+        }
+
+        .stat p {
+            color: #d1d5db;
+            font-size: 0.9rem;
+        }
+
+        /* ================= REVIEW ================= */
+
+        .review-box {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .review-box i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        /* ================= CONTACT ================= */
+
+        .contact {
+            background: #eef6ff;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            border: 1px solid var(--border);
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item i {
+            color: var(--primary);
+            width: 20px;
+            margin-top: 5px;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: var(--dark);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .social-links a {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #0b1120;
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.85rem;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 900px) {
+
+            .hero-grid,
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .patent-grid,
+            .award-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 65px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 25px;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            section {
+                padding: 65px 0;
+            }
+
+            .hero h1 {
+                font-size: 2.7rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero-card {
+                padding: 25px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav>
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            AZA Munsur
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#patents">Patents</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <span class="hero-label">
+                RESEARCHER • HYDROGEN ENERGY • POLYMER SCIENCE
+            </span>
+
+            <h1>
+                Md Abu Zafar<br>
+                <span>Al Munsur</span>
+            </h1>
+
+            <h2>
+                Postdoctoral Fellow · Korea Institute of Energy Technology
+            </h2>
+
+            <p>
+                Researcher specializing in polymer electrolyte membranes,
+                hydrogen energy, fuel cells, water electrolysis, carbon dioxide
+                separation, and advanced polymeric materials.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#research" class="btn btn-primary">
+                    <i class="fas fa-flask"></i>
+                    Explore Research
+                </a>
+
+                <a href="#publications" class="btn btn-outline">
+                    <i class="fas fa-book"></i>
+                    Publications
+                </a>
+
+                <a href="https://linkedin.com/in/mazams"
+                   target="_blank"
+                   class="btn btn-outline">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="profile-icon">
+                <i class="fas fa-atom"></i>
+            </div>
+
+            <h3>Academic Profile</h3>
+
+            <p>
+                <strong>Current Position:</strong><br>
+                Postdoctoral Fellow
+            </p>
+
+            <p>
+                <strong>Institute:</strong><br>
+                Institute of Hydrogen Energy, KENTECH
+            </p>
+
+            <p>
+                <strong>Ph.D.:</strong><br>
+                Chemistry · Incheon National University
+            </p>
+
+            <p>
+                <strong>Research Focus:</strong><br>
+                Polymer Electrolytes & Hydrogen Energy
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="container stats-grid">
+
+        <div class="stat">
+            <h3>14+</h3>
+            <p>Peer-Reviewed Journal Articles</p>
+        </div>
+
+        <div class="stat">
+            <h3>6</h3>
+            <p>Patents</p>
+        </div>
+
+        <div class="stat">
+            <h3>16+</h3>
+            <p>Conference Presentations</p>
+        </div>
+
+        <div class="stat">
+            <h3>10+</h3>
+            <p>Years of Research Experience</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>About Me</span>
+            <h2>Researcher & Materials Scientist</h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-card">
+
+                <h3>Professional Profile</h3>
+
+                <p>
+                    I am a researcher working at the intersection of polymer
+                    science, electrochemistry, membrane technology and
+                    hydrogen energy.
+                </p>
+
+                <br>
+
+                <p>
+                    My research involves the design, synthesis,
+                    characterization and application of functional polymers
+                    and polymer electrolyte membranes for energy conversion,
+                    hydrogen production and gas separation technologies.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <h3>Academic Background</h3>
+
+                <p>
+                    <strong>Ph.D. in Chemistry</strong><br>
+                    Incheon National University, South Korea
+                </p>
+
+                <br>
+
+                <p>
+                    Major: Organic Materials Synthesis
+                </p>
+
+                <br>
+
+                <p>
+                    <strong>M.Sc. in Chemistry</strong><br>
+                    University of Rajshahi, Bangladesh
+                </p>
+
+                <br>
+
+                <p>
+                    <strong>B.Sc. in Chemistry</strong><br>
+                    University of Rajshahi, Bangladesh
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= RESEARCH ================= -->
+
+<section id="research">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Research</span>
+
+            <h2>Research Areas</h2>
+
+            <p>
+                Development of advanced polymeric materials for energy,
+                electrochemical and separation applications.
+            </p>
+
+        </div>
+
+
+        <div class="research-list">
+
+            <div class="research-item">
+                <strong>Hydrogen Energy</strong><br>
+                Polymer electrolyte membranes, hydrogen production and
+                electrochemical energy conversion.
+            </div>
+
+            <div class="research-item">
+                <strong>Fuel Cells</strong><br>
+                Proton exchange membrane fuel cells and anion exchange
+                membrane fuel cells, including membrane electrode assemblies.
+            </div>
+
+            <div class="research-item">
+                <strong>Water Electrolysis</strong><br>
+                Development of low-cost and high-performance polymer
+                electrolyte membranes for hydrogen generation.
+            </div>
+
+            <div class="research-item">
+                <strong>Carbon Capture & Separation</strong><br>
+                Development of robust polymeric membranes for CO₂ separation
+                and sequestration.
+            </div>
+
+            <div class="research-item">
+                <strong>Membrane Technology</strong><br>
+                Nanofiltration membranes, ion-exchange membranes and
+                advanced polymeric membrane architectures.
+            </div>
+
+            <div class="research-item">
+                <strong>Advanced Polymer Materials</strong><br>
+                Polymer synthesis, molecular design, interpenetrating polymer
+                networks, functional polymers and nanocomposite membranes.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Career</span>
+            <h2>Professional Experience</h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="date">
+                    April 2022 – Present
+                </div>
+
+                <h3>Postdoctoral Fellow</h3>
+
+                <p class="institution">
+                    Korea Institute of Energy Technology (KENTECH)
+                </p>
+
+                <p>
+                    Institute of Hydrogen Energy
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="date">
+                    March 2021 – February 2022
+                </div>
+
+                <h3>Presidential Postdoctoral Fellow</h3>
+
+                <p class="institution">
+                    Incheon National University
+                </p>
+
+                <p>
+                    Department of Chemistry, College of Natural Sciences
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Education</span>
+            <h2>Academic Journey</h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="date">
+                    2016 – 2021
+                </div>
+
+                <h3>Doctor of Philosophy in Chemistry</h3>
+
+                <p class="institution">
+                    Incheon National University, South Korea
+                </p>
+
+                <p>
+                    Major: Organic Materials Synthesis
+                </p>
+
+                <p>
+                    Dissertation: Development of ion-conducting polymers
+                    with enhanced properties by surface-coating and
+                    molecular control strategies.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="date">
+                    2013 – 2016
+                </div>
+
+                <h3>Master of Science in Chemistry</h3>
+
+                <p class="institution">
+                    University of Rajshahi, Bangladesh
+                </p>
+
+                <p>
+                    Major: Synthetic Organic Chemistry
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="date">
+                    2008 – 2013
+                </div>
+
+                <h3>Bachelor of Science in Chemistry</h3>
+
+                <p class="institution">
+                    University of Rajshahi, Bangladesh
+                </p>
+
+                <p>
+                    Minor: Physics and Mathematics
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PUBLICATIONS ================= -->
+
+<section id="publications">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Research Output</span>
+            <h2>Selected Publications</h2>
+
+            <p>
+                Peer-reviewed research publications in polymer science,
+                membrane technology and hydrogen energy.
+            </p>
+
+        </div>
+
+
+        <!-- 2025 -->
+
+        <div class="publication">
+
+            <span class="publication-number">14.</span>
+
+            <h3>
+                Long-Term, Stable Alkaline Electrolysis with a Durable
+                Crystalline Polybenzimidazole Membrane.
+            </h3>
+
+            <p class="journal">
+                Small, 2025, 21, e02810.
+            </p>
+
+            <a class="doi"
+               href="https://doi.org/10.1002/smll.202502810"
+               target="_blank">
+                DOI →
+            </a>
+
+        </div>
+
+
+        <div class="publication">
+
+            <span class="publication-number">13.</span>
+
+            <h3>
+                Development of High-performance Polymer Electrolyte
+                Membranes through the Application of Quantum Dot Coatings
+                to Nafion Membranes.
+            </h3>
+
+            <p class="journal">
+                ACS Applied Materials & Interfaces, 2023, 15, 15616–15624.
+            </p>
+
+            <a class="doi"
+               href="https://doi.org/10.1021/acsami.3c01289"
+               target="_blank">
+                DOI →
+            </a>
+
+        </div>
+
+
+        <div class="publication">
+
+            <span class="publication-number">12.</span>
+
+            <h3>
+                Hexyl quaternary ammonium- and fluorobenzoyl-grafted SEBS
+                polymers as hydrophilic-hydrophobic comb-type anion exchange
+                membranes.
+            </h3>
+
+            <p class="journal">
+                Journal of Membrane Science, 2022, 643, 120029.
+            </p>
+
+            <a class="doi"
+               href="https://doi.org/10.1016/j.memsci.2021.120029"
+               target="_blank">
+                DOI →
+            </a>
+
+        </div>
+
+
+        <div class="publication">
+
+            <span class="publication-number">11.</span>
+
+            <h3>
+                Polyamide-coated Nafion composite membranes with reduced
+                hydrogen crossover produced via interfacial polymerization.
+            </h3>
+
+            <p class="journal">
+                International Journal of Hydrogen Energy, 2021, 47, 1202–1216.
+            </p>
+
+            <a class="doi"
+               href="https://doi.org/10.1016/j.ijhydene.2021.10.074"
+               target="_blank">
+                DOI →
+            </a>
+
+        </div>
+
+
+        <div class="publication">
+
+            <span class="publication-number">10.</span>
+
+            <h3>
+                Nafion-based proton exchange membranes with a cross-linked
+                semi-interpenetrating polymer network between PVA and PAA.
+            </h3>
+
+            <p class="journal">
+                ACS Applied Materials & Interfaces, 2021, 13, 28188–28200.
+            </p>
+
+            <a class="doi"
+               href="https://doi.org/10.1021/acsami.1c05662"
+               target="_blank">
+                DOI →
+            </a>
+
+        </div>
+
+
+        <div class="publication">
+
+            <span class="publication-number">9.</span>
+
+            <h3>
+                Sulfonated Poly(Ether Sulfone)-Coated and Blended Nafion
+                Membranes with Enhanced Conductivity and Reduced Hydrogen
+                Permeability.
+            </h3>
+
+            <p class="journal">
+                ACS Applied Energy Materials, 2020, 3, 11418–11433.
+            </p>
+
+            <a class="doi"
+               href="https://doi.org/10.1021/acsaem.0c02319"
+               target="_blank">
+                DOI →
+            </a>
+
+        </div>
+
+
+        <div class="publication">
+
+            <span class="publication-number">8.</span>
+
+            <h3>
+                Highly Efficient and Metal-Free Synthesis of
+                Tri- and Tetrasubstituted Imidazole Catalyzed by
+                3-Picolinic Acid.
+            </h3>
+
+            <p class="journal">
+                Arabian Journal of Chemistry, 2020, 13, 8807–8814.
+            </p>
+
+            <a class="doi"
+               href="https://doi.org/10.1016/j.arabjc.2020.10.010"
+               target="_blank">
+                DOI →
+            </a>
+
+        </div>
+
+
+        <div class="publication">
+
+            <span class="publication-number">7.</span>
+
+            <h3>
+                PEG/PPG-PDMS-based Crosslinked Copolymer Membranes Prepared
+                by ROMP and in situ Membrane Casting for CO₂ Separation.
+            </h3>
+
+            <p class="journal">
+                ACS Applied Materials & Interfaces, 2020, 12, 27286–27299.
+            </p>
+
+            <a class="doi"
+               href="https://doi.org/10.1021/acsami.0c06926"
+               target="_blank">
+                DOI →
+            </a>
+
+        </div>
+
+
+        <div style="text-align:center; margin-top:30px;">
+
+            <a href="https://scholar.google.com/citations?user=6ayEY-gAAAAJ"
+               target="_blank"
+               class="btn btn-primary">
+
+                <i class="fas fa-graduation-cap"></i>
+                View Google Scholar
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PATENTS ================= -->
+
+<section id="patents">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Innovation</span>
+            <h2>Patents</h2>
+
+        </div>
+
+
+        <div class="patent-grid">
+
+            <div class="patent">
+
+                <i class="fas fa-lightbulb"></i>
+
+                <h3>
+                    Carbon quantum dot-coated polymer electrolyte membranes
+                    and method thereof
+                </h3>
+
+                <p>
+                    Patent KR102867798 · Issued April 24, 2023
+                </p>
+
+            </div>
+
+
+            <div class="patent">
+
+                <i class="fas fa-lightbulb"></i>
+
+                <h3>
+                    Anion exchange membranes comprising
+                    hydrophilic-hydrophobic comb-type SEBS
+                </h3>
+
+                <p>
+                    Patent KR102600485 · Issued November 8, 2023
+                </p>
+
+            </div>
+
+
+            <div class="patent">
+
+                <i class="fas fa-lightbulb"></i>
+
+                <h3>
+                    Nafion-based composite membrane for proton exchange
+                    membrane applications
+                </h3>
+
+                <p>
+                    Patent KR102597827 · Issued November 3, 2023
+                </p>
+
+            </div>
+
+
+            <div class="patent">
+
+                <i class="fas fa-lightbulb"></i>
+
+                <h3>
+                    Sulfonated polyethersulfone copolymer and composite
+                    ion-exchange membranes
+                </h3>
+
+                <p>
+                    Patent KR102418820 · Issued July 11, 2022
+                </p>
+
+            </div>
+
+
+            <div class="patent">
+
+                <i class="fas fa-lightbulb"></i>
+
+                <h3>
+                    Anion exchange membrane and method for preparing the same
+                </h3>
+
+                <p>
+                    Patent KR102217838 · Issued February 22, 2021
+                </p>
+
+            </div>
+
+
+            <div class="patent">
+
+                <i class="fas fa-lightbulb"></i>
+
+                <h3>
+                    Method of Increasing Solubility of Polyvinyl Alcohol
+                </h3>
+
+                <p>
+                    Patent KR102030501 · Issued October 10, 2019
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Expertise</span>
+            <h2>Technical Skills</h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+
+                <h3>
+                    <i class="fas fa-flask"></i>
+                    Polymer Synthesis
+                </h3>
+
+                <div class="tags">
+                    <span class="tag">ROMP</span>
+                    <span class="tag">RCM</span>
+                    <span class="tag">Cross-metathesis</span>
+                    <span class="tag">ATRP</span>
+                    <span class="tag">RAFT</span>
+                    <span class="tag">Polycondensation</span>
+                    <span class="tag">PBI</span>
+                    <span class="tag">ABPBI</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    <i class="fas fa-microscope"></i>
+                    Characterization
+                </h3>
+
+                <div class="tags">
+                    <span class="tag">TGA</span>
+                    <span class="tag">DMA</span>
+                    <span class="tag">DSC</span>
+                    <span class="tag">FTIR</span>
+                    <span class="tag">NMR</span>
+                    <span class="tag">XRD</span>
+                    <span class="tag">XPS</span>
+                    <span class="tag">TEM</span>
+                    <span class="tag">SEM</span>
+                    <span class="tag">AFM</span>
+                    <span class="tag">EIS</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    <i class="fas fa-cogs"></i>
+                    Membrane & Device
+                </h3>
+
+                <div class="tags">
+                    <span class="tag">MEA</span>
+                    <span class="tag">CCM</span>
+                    <span class="tag">CCS</span>
+                    <span class="tag">Decal</span>
+                    <span class="tag">Spin coating</span>
+                    <span class="tag">Doctor blade</span>
+                    <span class="tag">Spray coating</span>
+                    <span class="tag">Fuel cells</span>
+                    <span class="tag">Electrolysis</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    <i class="fas fa-laptop-code"></i>
+                    Software
+                </h3>
+
+                <div class="tags">
+                    <span class="tag">OriginPro</span>
+                    <span class="tag">SigmaPlot</span>
+                    <span class="tag">ChemDraw</span>
+                    <span class="tag">ACDLABS</span>
+                    <span class="tag">ChemOffice</span>
+                    <span class="tag">Adobe Photoshop</span>
+                    <span class="tag">Mendeley</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    <i class="fas fa-users"></i>
+                    Mentoring
+                </h3>
+
+                <p>
+                    Trained undergraduate and graduate students in basic
+                    organic material synthesis experiments and laboratory
+                    techniques.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    Teaching
+                </h3>
+
+                <p>
+                    Experience tutoring O-level, A-level and undergraduate
+                    students in basic and advanced organic chemistry.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= AWARDS ================= -->
+
+<section id="awards">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Recognition</span>
+            <h2>Awards & Fellowships</h2>
+
+        </div>
+
+
+        <div class="award-grid">
+
+            <div class="award">
+
+                <i class="fas fa-award"></i>
+
+                <div>
+                    <h3>Graduate Research Excellence Award</h3>
+                    <p>
+                        Institute of Basic Science, Incheon National University · 2019
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="award">
+
+                <i class="fas fa-award"></i>
+
+                <div>
+                    <h3>Excellent Oral Presentation Award</h3>
+                    <p>
+                        The Membrane Society of Korea · 2021
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="award">
+
+                <i class="fas fa-graduation-cap"></i>
+
+                <div>
+                    <h3>Presidential Postdoctoral Research Assistance</h3>
+                    <p>
+                        Incheon National University · 2021
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="award">
+
+                <i class="fas fa-graduation-cap"></i>
+
+                <div>
+                    <h3>100% Tuition Fee Waiver Fellowship</h3>
+                    <p>
+                        Incheon National University
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PEER REVIEW ================= -->
+
+<section id="reviewing">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Academic Service</span>
+            <h2>Peer Reviewer</h2>
+
+        </div>
+
+        <div class="review-box">
+
+            <i class="fas fa-user-check"></i>
+
+            <p>
+                Reviewer for journals published by ACS, Wiley, RSC,
+                Elsevier, Springer Nature, IOP, SAGE and other international
+                publishers.
+            </p>
+
+            <br>
+
+            <p>
+                Areas include polymer materials, membrane science,
+                hydrogen energy, electrochemistry, fuel cells,
+                energy storage and sustainable technologies.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INVITED TALK ================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Speaking</span>
+            <h2>Invited Talk</h2>
+
+        </div>
+
+        <div class="about-card">
+
+            <h3>
+                Hydrogen is an Energy Vector for Next Generation Energy Solutions
+            </h3>
+
+            <p>
+                Research seminar for graduate/postgraduate students and faculty
+            </p>
+
+            <p>
+                University of Rajshahi, Bangladesh · October 20, 2025
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Get In Touch</span>
+            <h2>Contact</h2>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <div class="contact-item">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <div>
+                        <strong>Email</strong>
+                        <a href="mailto:mazam@kentech.ac.kr">
+                            mazam@kentech.ac.kr
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="fas fa-building"></i>
+
+                    <div>
+                        <strong>Affiliation</strong>
+                        Institute of Hydrogen Energy<br>
+                        Korea Institute of Energy Technology
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="fas fa-map-marker-alt"></i>
+
+                    <div>
+                        <strong>Location</strong>
+                        Naju-si, Jeollanam-do, South Korea
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="fas fa-fingerprint"></i>
+
+                    <div>
+                        <strong>ORCID</strong>
+                        0000-0002-0301-6812
+                    </div>
+
+                </div>
+
+
+                <div class="social-links">
+
+                    <a href="https://orcid.org/0000-0002-0301-6812"
+                       target="_blank"
+                       title="ORCID">
+                        <i class="fab fa-orcid"></i>
+                    </a>
+
+                    <a href="https://scholar.google.com/citations?user=6ayEY-gAAAAJ"
+                       target="_blank"
+                       title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/mazams"
+                       target="_blank"
+                       title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="mailto:mazam@kentech.ac.kr"
+                       title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>Research Collaboration</h3>
+
+                <p>
+                    I am interested in research collaborations involving
+                    polymer electrolyte membranes, hydrogen production,
+                    fuel cells, water electrolysis, membrane technology,
+                    carbon capture and advanced polymer materials.
+                </p>
+
+                <br>
+
+                <a href="mailto:mazam@kentech.ac.kr"
+                   class="btn btn-primary">
+
+                    <i class="fas fa-paper-plane"></i>
+                    Contact Me
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © <span id="year"></span>
+        <strong>Md Abu Zafar Al Munsur</strong>.
+        All Rights Reserved.
+    </p>
+
+    <p>
+        Academic Portfolio · Hydrogen Energy · Polymer Science
+    </p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+    function toggleMenu() {
+
+        const navLinks = document.getElementById("navLinks");
+
+        navLinks.classList.toggle("active");
+
+    }
+
+
+    // Automatically update copyright year
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    // Close mobile menu after clicking a link
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            document.getElementById("navLinks")
+                .classList.remove("active");
+
+        });
+
+    });
+
+</script>
+
+
+</body>
+</html>
