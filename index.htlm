@@ -10,13 +10,10 @@
           content="Academic website of Dr. Md Abu Zafar Al Munsur, researcher in polymer electrolyte membranes, hydrogen energy, fuel cells and water electrolysis.">
 
     <meta name="author" content="Md Abu Zafar Al Munsur">
-
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -36,7 +33,7 @@
             --max-width: 1180px;
         }
 
-        * {
+        {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -64,7 +61,6 @@
             margin: auto;
         }
 
-        /* ================= NAVIGATION ================= */
 
         nav {
             position: fixed;
@@ -114,8 +110,6 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
-
-        /* ================= HERO ================= */
 
         .hero {
             min-height: 100vh;
@@ -237,8 +231,6 @@
             font-size: 0.9rem;
         }
 
-        /* ================= SECTIONS ================= */
-
         section {
             padding: 90px 0;
         }
@@ -268,8 +260,6 @@
             margin: 10px auto;
             color: var(--light-text);
         }
-
-        /* ================= ABOUT ================= */
 
         .about-grid {
             display: grid;
@@ -304,8 +294,6 @@
         .research-item strong {
             color: var(--dark);
         }
-
-        /* ================= EXPERIENCE ================= */
 
         .timeline {
             position: relative;
@@ -356,8 +344,6 @@
             font-weight: 600;
         }
 
-        /* ================= PUBLICATIONS ================= */
-
         .publication {
             background: white;
             padding: 25px 30px;
@@ -397,7 +383,7 @@
             font-weight: 600;
         }
 
-        .doi:hover {
+        .doi: hover {
             text-decoration: underline;
         }
 
@@ -411,7 +397,6 @@
             font-size: 1.5rem;
         }
 
-        /* ================= PATENTS ================= */
 
         .patent-grid {
             display: grid;
@@ -442,8 +427,6 @@
             font-size: 0.88rem;
             color: var(--light-text);
         }
-
-        /* ================= SKILLS ================= */
 
         .skills-grid {
             display: grid;
@@ -478,7 +461,6 @@
             font-weight: 600;
         }
 
-        /* ================= AWARDS ================= */
 
         .award-grid {
             display: grid;
@@ -505,7 +487,6 @@
             font-size: 1rem;
         }
 
-        /* ================= STATS ================= */
 
         .stats {
             background: var(--dark);
@@ -529,8 +510,6 @@
             font-size: 0.9rem;
         }
 
-        /* ================= REVIEW ================= */
-
         .review-box {
             max-width: 850px;
             margin: auto;
@@ -547,7 +526,6 @@
             margin-bottom: 15px;
         }
 
-        /* ================= CONTACT ================= */
 
         .contact {
             background: #eef6ff;
@@ -600,12 +578,10 @@
             transition: 0.3s;
         }
 
-        .social-links a:hover {
+        .social-links a: hover {
             background: var(--primary);
             color: white;
         }
-
-        /* ================= FOOTER ================= */
 
         footer {
             background: #0b1120;
@@ -619,7 +595,6 @@
             color: white;
         }
 
-        /* ================= RESPONSIVE ================= */
 
         @media (max-width: 900px) {
 
@@ -692,7 +667,6 @@
 
 <body>
 
-<!-- ================= NAVIGATION ================= -->
 
 <nav>
     <div class="nav-container">
@@ -718,8 +692,6 @@
     </div>
 </nav>
 
-
-<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
@@ -804,9 +776,6 @@
 
 </section>
 
-
-<!-- ================= STATS ================= -->
-
 <section class="stats">
 
     <div class="container stats-grid">
@@ -835,8 +804,6 @@
 
 </section>
 
-
-<!-- ================= ABOUT ================= -->
 
 <section id="about">
 
@@ -909,8 +876,6 @@
 </section>
 
 
-<!-- ================= RESEARCH ================= -->
-
 <section id="research">
 
     <div class="container">
@@ -974,8 +939,6 @@
 </section>
 
 
-<!-- ================= EXPERIENCE ================= -->
-
 <section id="experience">
 
     <div class="container">
@@ -1037,8 +1000,6 @@
 
 </section>
 
-
-<!-- ================= EDUCATION ================= -->
 
 <section id="education">
 
@@ -1129,7 +1090,6 @@
 </section>
 
 
-<!-- ================= PUBLICATIONS ================= -->
 
 <section id="publications">
 
@@ -1148,7 +1108,6 @@
         </div>
 
 
-        <!-- 2025 -->
 
         <div class="publication">
 
@@ -1348,8 +1307,6 @@
 </section>
 
 
-<!-- ================= PATENTS ================= -->
-
 <section id="patents">
 
     <div class="container">
@@ -1463,8 +1420,6 @@
 
 </section>
 
-
-<!-- ================= SKILLS ================= -->
 
 <section id="skills">
 
@@ -1604,8 +1559,6 @@
 </section>
 
 
-<!-- ================= AWARDS ================= -->
-
 <section id="awards">
 
     <div class="container">
@@ -1682,8 +1635,6 @@
 </section>
 
 
-<!-- ================= PEER REVIEW ================= -->
-
 <section id="reviewing">
 
     <div class="container">
@@ -1720,8 +1671,6 @@
 </section>
 
 
-<!-- ================= INVITED TALK ================= -->
-
 <section>
 
     <div class="container">
@@ -1753,8 +1702,6 @@
 
 </section>
 
-
-<!-- ================= CONTACT ================= -->
 
 <section id="contact" class="contact">
 
@@ -1883,8 +1830,6 @@
 </section>
 
 
-<!-- ================= FOOTER ================= -->
-
 <footer>
 
     <p>
@@ -1899,8 +1844,6 @@
 
 </footer>
 
-
-<!-- ================= JAVASCRIPT ================= -->
 
 <script>
 
