@@ -1,1859 +1,462 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Md Abu Zafar Al Munsur | Researcher</title>
-
-    <meta name="description"
-          content="Academic website of Dr. Md Abu Zafar Al Munsur, researcher in polymer electrolyte membranes, hydrogen energy, fuel cells and water electrolysis.">
-
-    <meta name="author" content="Md Abu Zafar Al Munsur">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <style>
-
-        :root {
-            --primary: #0b5ed7;
-            --primary-dark: #063b88;
-            --secondary: #0f766e;
-            --dark: #111827;
-            --text: #374151;
-            --light-text: #6b7280;
-            --background: #f8fafc;
-            --white: #ffffff;
-            --border: #e5e7eb;
-            --card-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
-            --max-width: 1180px;
-        }
-
-        {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: "Inter", sans-serif;
-            color: var(--text);
-            background: var(--background);
-            line-height: 1.7;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        img {
-            max-width: 100%;
-        }
-
-        .container {
-            width: min(92%, var(--max-width));
-            margin: auto;
-        }
-
-
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border);
-            z-index: 1000;
-        }
-
-        .nav-container {
-            max-width: var(--max-width);
-            margin: auto;
-            padding: 16px 4%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.1rem;
-            font-weight: 800;
-            color: var(--primary-dark);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 25px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: #374151;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-
-        .menu-btn {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding-top: 90px;
-            background:
-                linear-gradient(135deg, #eef6ff 0%, #ffffff 55%, #ecfdf5 100%);
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.3fr 0.7fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .hero-label {
-            display: inline-block;
-            color: var(--primary);
-            background: #e8f1ff;
-            padding: 7px 14px;
-            border-radius: 30px;
-            font-size: 0.82rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-family: "Playfair Display", serif;
-            font-size: clamp(2.8rem, 6vw, 5rem);
-            line-height: 1.08;
-            color: var(--dark);
-            margin-bottom: 20px;
-        }
-
-        .hero h1 span {
-            color: var(--primary);
-        }
-
-        .hero h2 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--secondary);
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            max-width: 720px;
-            font-size: 1.05rem;
-            color: var(--light-text);
-            margin-bottom: 30px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        .btn-primary {
-            background: var(--primary);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            border: 1px solid var(--border);
-            background: white;
-        }
-
-        .btn-outline:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-
-        .hero-card {
-            background: white;
-            padding: 35px;
-            border-radius: 20px;
-            box-shadow: var(--card-shadow);
-            border: 1px solid var(--border);
-        }
-
-        .hero-card .profile-icon {
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.3rem;
-            margin-bottom: 20px;
-        }
-
-        .hero-card h3 {
-            color: var(--dark);
-            margin-bottom: 8px;
-        }
-
-        .hero-card p {
-            margin-bottom: 10px;
-            font-size: 0.9rem;
-        }
-
-        section {
-            padding: 90px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 55px;
-        }
-
-        .section-title span {
-            color: var(--primary);
-            font-size: 0.85rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .section-title h2 {
-            font-family: "Playfair Display", serif;
-            font-size: 2.5rem;
-            color: var(--dark);
-            margin-top: 8px;
-        }
-
-        .section-title p {
-            max-width: 700px;
-            margin: 10px auto;
-            color: var(--light-text);
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 35px;
-        }
-
-        .about-card {
-            background: white;
-            padding: 35px;
-            border-radius: 15px;
-            border: 1px solid var(--border);
-            box-shadow: var(--card-shadow);
-        }
-
-        .about-card h3 {
-            color: var(--dark);
-            margin-bottom: 15px;
-        }
-
-        .research-list {
-            display: grid;
-            gap: 14px;
-        }
-
-        .research-item {
-            padding: 15px;
-            border-left: 4px solid var(--primary);
-            background: #f8fafc;
-        }
-
-        .research-item strong {
-            color: var(--dark);
-        }
-
-        .timeline {
-            position: relative;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .timeline::before {
-            content: "";
-            position: absolute;
-            left: 15px;
-            top: 0;
-            width: 2px;
-            height: 100%;
-            background: #dbeafe;
-        }
-
-        .timeline-item {
-            position: relative;
-            padding-left: 55px;
-            margin-bottom: 45px;
-        }
-
-        .timeline-dot {
-            position: absolute;
-            left: 6px;
-            top: 5px;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: var(--primary);
-            border: 4px solid #dbeafe;
-        }
-
-        .timeline-item h3 {
-            color: var(--dark);
-            font-size: 1.15rem;
-        }
-
-        .timeline-item .date {
-            color: var(--primary);
-            font-size: 0.88rem;
-            font-weight: 700;
-            margin: 4px 0;
-        }
-
-        .timeline-item .institution {
-            font-weight: 600;
-        }
-
-        .publication {
-            background: white;
-            padding: 25px 30px;
-            margin-bottom: 18px;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            transition: 0.3s;
-        }
-
-        .publication:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--card-shadow);
-        }
-
-        .publication-number {
-            color: var(--primary);
-            font-weight: 800;
-            margin-right: 8px;
-        }
-
-        .publication h3 {
-            display: inline;
-            color: var(--dark);
-            font-size: 1rem;
-        }
-
-        .journal {
-            color: var(--secondary);
-            font-weight: 600;
-        }
-
-        .doi {
-            display: inline-block;
-            margin-top: 8px;
-            color: var(--primary);
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        .doi: hover {
-            text-decoration: underline;
-        }
-
-        .pub-section {
-            margin-bottom: 45px;
-        }
-
-        .pub-section h3 {
-            color: var(--dark);
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-        }
-
-
-        .patent-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .patent {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-        }
-
-        .patent i {
-            color: var(--primary);
-            font-size: 1.4rem;
-            margin-bottom: 12px;
-        }
-
-        .patent h3 {
-            font-size: 1rem;
-            color: var(--dark);
-            margin-bottom: 8px;
-        }
-
-        .patent p {
-            font-size: 0.88rem;
-            color: var(--light-text);
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .skill-card {
-            background: white;
-            padding: 28px;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-        }
-
-        .skill-card h3 {
-            color: var(--dark);
-            margin-bottom: 15px;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .tag {
-            background: #eef6ff;
-            color: var(--primary-dark);
-            padding: 6px 10px;
-            border-radius: 6px;
-            font-size: 0.78rem;
-            font-weight: 600;
-        }
-
-
-        .award-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .award {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            display: flex;
-            gap: 18px;
-        }
-
-        .award i {
-            color: #d4a017;
-            font-size: 1.7rem;
-        }
-
-        .award h3 {
-            color: var(--dark);
-            font-size: 1rem;
-        }
-
-
-        .stats {
-            background: var(--dark);
-            color: white;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            text-align: center;
-        }
-
-        .stat h3 {
-            font-size: 2.5rem;
-            color: #60a5fa;
-        }
-
-        .stat p {
-            color: #d1d5db;
-            font-size: 0.9rem;
-        }
-
-        .review-box {
-            max-width: 850px;
-            margin: auto;
-            background: white;
-            padding: 35px;
-            border-radius: 15px;
-            border: 1px solid var(--border);
-            text-align: center;
-        }
-
-        .review-box i {
-            font-size: 2rem;
-            color: var(--primary);
-            margin-bottom: 15px;
-        }
-
-
-        .contact {
-            background: #eef6ff;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 35px;
-        }
-
-        .contact-card {
-            background: white;
-            padding: 35px;
-            border-radius: 15px;
-            border: 1px solid var(--border);
-        }
-
-        .contact-item {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .contact-item i {
-            color: var(--primary);
-            width: 20px;
-            margin-top: 5px;
-        }
-
-        .contact-item strong {
-            display: block;
-            color: var(--dark);
-        }
-
-        .social-links {
-            display: flex;
-            gap: 12px;
-            margin-top: 25px;
-        }
-
-        .social-links a {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background: #f1f5f9;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.3s;
-        }
-
-        .social-links a: hover {
-            background: var(--primary);
-            color: white;
-        }
-
-        footer {
-            background: #0b1120;
-            color: #94a3b8;
-            text-align: center;
-            padding: 30px 20px;
-            font-size: 0.85rem;
-        }
-
-        footer strong {
-            color: white;
-        }
-
-
-        @media (max-width: 900px) {
-
-            .hero-grid,
-            .about-grid,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .skills-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .patent-grid,
-            .award-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 65px;
-                left: 0;
-                width: 100%;
-                background: white;
-                flex-direction: column;
-                padding: 25px;
-                border-bottom: 1px solid var(--border);
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .menu-btn {
-                display: block;
-            }
-        }
-
-        @media (max-width: 600px) {
-
-            section {
-                padding: 65px 0;
-            }
-
-            .hero h1 {
-                font-size: 2.7rem;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .hero-card {
-                padding: 25px;
-            }
-        }
-
-    </style>
-</head>
-
-
-<body>
-
-
-<nav>
-    <div class="nav-container">
-
-        <a href="#home" class="logo">
-            AZA Munsur
-        </a>
-
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#patents">Patents</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Md Abu Zafar Al Munsur</title>
+
+    <meta name="author" content="Md Abu Zafar al Munsur">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:1200px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.0%;width:70%;vertical-align:middle">
+                <p class="name" style="text-align: center-right;">
+                  Md Abu Zafar Al Munsur
+				  <p>
+					I'm a postdoctoral fellow at <a href="https://kentech.ac.kr/main.do">KENTECH</a> in Naju-Si, South Korea, where I worked under the guidance of 
+					<a href="https://pems.kentech.ac.kr/composition/">Prof. Hyoung-Juhn Kim</a> with a small team that mostly focuses on <a herf="https://pems.kentech.ac.kr">Polymer 
+					electrolyte membranes</a> for hydrogen energy conversion. I did my PhD at Incheon National University, Republic of Korea, where I was advised by 
+					  <a href="https://sites.google.com/site/inuomslab/introduction/professor">Prof. Tae-Hyun Kim</a>.
+				  </p>
+                <p style="text-align: center">
+                  <a href="mailto:mazamsbd@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="data/mazamsbd-CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://sites.google.com/view/mazams/bio">Bio</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=6ayEY-gAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/mazamsbd">X</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/mazamsbd/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:30%;max-width:30%">
+                <a href="images/mazamsbd.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/mazamsbd.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+				  
+				<p>
+				<br>
+			 	My research focuses on the development of advanced polymer electrolyte membranes (PEMs), which are critical components of fuel cells and water electrolysis systems.
+				My work aims to address key challenges in the hydrogen energy sector by developing high-performance, durable, and cost-effective membrane materials.
+				</br>
+			  
+				</br>
+				My expertise lies in the design, synthesis, and functionalization of novel polymeric materials. I specialize in tailoring the morphology and microstructure of polymer
+			  	membranes to optimize their ionic conductivity, chemical stability, and mechanical strength, which are essential for achieving efficient and durable electrochemical 
+			  	performance. My research also involves advanced characterization techniques to investigate the physicochemical, structural, and morphological properties of these 
+			  	materials at both the molecular and macroscopic levels. 
+				</br>
+			
+				<br>
+				Prior to my postdoctoral appointment, I earned my Ph.D. in Polymer Chemistry from Incheon National University, where I established a strong foundation in polymer science and 
+				advanced functional materials. Throughout my academic career, I have maintained a strong commitment to advancing sustainable and green energy technologies, particularly 
+				hydrogen-based energy systems. I have published my research in reputable scientific journals and actively participated in international conferences, fostering academic 
+				collaboration and contributing to the advancement of clean energy research.
+				</br>
+			  
+				<br>
+				With a strong passion for sustainable energy solutions and a robust technical background in polymeric
+				materials and electrochemical technologies, I aspire to contribute to the global transition toward a low-carbon energy future by developing innovative membrane materials 
+				that can enhance the efficiency, durability, and scalability of hydrogen technologies. ome papers are <span class="highlight">highlighted below</span>.
+				</br>	
+				  </p>
+        </script>
+		  </ul>
+			
+      </td>
+      <td style="padding:20px;width:100%;vertical-align:middle">
+				</p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+			   <tr>
+  			  <td style="padding:20px;width:100%;vertical-align:middle">
+					  
+     	 <heading>Updates</heading>
+
+      <div class="notes-box">
+        <ul>
+          <li><strong>Paper:</strong> "Long-Term, Stable Alkaline Electrolysis with a Durable Crystalline Polybenzimidazole Membrane" Small 21, no. 38 (2025): e02810.</li>
+          <li><strong>Talk:</strong> "bla bala bla.</li>
+          <li><strong>Keynote Talk:</strong> "bla bla bla.</li>
+          <li><strong>Fall 2025:</strong> Guiding masters student basic & advanced organic synthsis and polymerization.</li>
+          <li><strong>Paper:</strong> bla bla bla5.</li>
+          <li><strong>Paper:</strong> "Development of High-performance Polymer Electrolyte Membranes through the Application of Quantum Dot Coatings to Nafion Membranes" ACS Appl. Mater. Interfaces 2023, 15, 15616-15624.</li>
+          <li><strong>Talk:</strong> "Hydrogen is an energy vector for next-generation energy solutions" Research seminar for graduate/postgraduate students and faculty, University of Rajshahi, Rajshahi-6205, Bangladesh, Oct. 20, 2025.</li>
+          <li><strong>Award:</strong> <strong>2019</strong> Graduate research excellence award (By the Institute of Basic Science, Incheon National University). <strong>2021</strong>  Excellent oral presentation award (By the Membrane Society of Korea) .</li>
+          <li><strong>February 2021:</strong> Completed PhD.</li>
         </ul>
+ 
+   </script>
+		  </ul>
+			
+      </td>
+      <td style="padding:20px;width:100%;vertical-align:middle">
+				</p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+			   <tr>
+  			  <td style="padding:20px;width:100%;vertical-align:middle">
+					  
+      <heading>Papers</heading>
+	
+    <ol>
+	<li>
+	<a href="https://onlinelibrary.wiley.com/doi/10.1002/smll.202502810">
+      <span class="papertitle">Long-Term, Stable Alkaline Electrolysis with a Durable Crystalline Polybenzimidazole Membrane</span>
+    </a>
+    <br>
+    <a href="https://scholar.google.com/citations?hl=ko&user=nK0o8iYAAAAJ&view_op=list_works&sortby=pubdate">Tae Kyung Lee</a>,
+    <a href="https://scholar.google.com/citations?user=EhPsOacAAAAJ&hl=ko">MinJoong Kim</a>,
+    <a href="https://scholar.google.com/citations?user=-dGGgfoAAAAJ&hl=en">Hyungkyu Cho</a>,
+    <a href="https://onlinelibrary.wiley.com/doi/10.1002/smll.202502810">Seungju Lee</a>,
+	<a href="https://onlinelibrary.wiley.com/doi/10.1002/smll.202502810">Junghwan Kim</a>,
+	<strong>Abu Zafar Al Munsur</strong>,
+	<a href="https://onlinelibrary.wiley.com/doi/10.1002/smll.202502810">Byeol-Nim Lee</a>,
+	<a href="https://scholar.google.com/citations?user=nUIdBE4AAAAJ&hl=ko">Ji Eon Chae</a>,
+    <a href="https://onlinelibrary.wiley.com/doi/10.1002/smll.202502810">Jonghee Han</a>,
+    <a href="https://scholar.google.com/citations?user=a98J1BgAAAAJ&hl=en">Hyun Seo Park</a>
+	<a href="https://scholar.google.com/citations?user=76MYC58AAAAJ&hl=en">Jong Hyun Jang</a>
+	<a href="https://scholar.google.com/citations?user=xuHK6mMAAAAJ&hl=en">Sung Jong Yoo</a>
+	<a href="https://scholar.google.com/citations?user=9YXiDbMAAAAJ&hl=ko">Sae Yane Peak</a>
+	<a href="https://scholar.google.com/citations?user=HZka_SUAAAAJ&hl=en">So Young Lee*</a>
+	<a href="https://scholar.google.com/citations?user=q6Cg3TQAAAAJ&hl=ko">Hyun-Seok Cho*</a>
+	<a href="https://knupslab.wixsite.com/website/blank-4">Soo-Young Park*</a>
+	<a href="https://scholar.google.com/citations?user=Au2qRcwAAAAJ&hl=ko">Kwang Ho Song*</a>
+	<a href="https://pems.kentech.ac.kr/composition/">Hyoung-Juhn Kim*</a>
+    </br>
+    <em>Small</em>, 2025, 21, e02810.
+	<a href=" https://doi.org/10.1002/smll.202502810">DOI: 10.1002/smll.202502810</a>
+	
+	</li>
+		
+	<li>	
+    <a href="https://pubs.acs.org/doi/full/10.1021/acsami.3c01289">
+      <span class="papertitle">Development of High-Performance Polymer Electrolyte Membranes through the Application of Quantum Dot Coatings to Nafion Membranes</span> </a>
+    <br>
+    <a href="https://pubs.acs.org/doi/full/10.1021/acsami.3c01289">Kyungwhan Min(╪)</a>,
+	<strong>Abu Zafar Al Munsur(╪)</strong>,
+    <a href="https://scholar.google.com/citations?user=9YXiDbMAAAAJ&hl=ko">Sae Yane Paek</a>,
+    <a href="https://pubs.acs.org/doi/full/10.1021/acsami.3c01289">Soomin Jeon</a>,
+	<a href="https://scholar.google.com/citations?user=HZka_SUAAAAJ&hl=en">So Young Lee</a>, 
+    <a href="https://scholar.google.com/citations?user=284QyDIAAAAJ&hl=ko">Tae-Hyun Kim*</a>,
+	  </br>
+    <em>ACS Applied Materials & Interfaces</em>, 2023, 15, (12):15616-15624.
+    <a href="https://doi.org/10.1021/acsami.3c01289">DOI:10.1021/acsami.3c01289</a>
+   
+	</li>
+		
+	<li>
+		<a href="https://www.sciencedirect.com/science/article/pii/S0376738821009698">
+		<span class="papertitle">Hexyl Quaternary Ammonium- And Fluorobenzoyl-Grafted SEBS Polymers As Hydrophilic-Hydrophobic Comb-Type Anion Exchange Membranes</span> </a>
+	<br>
+		<strong>Md Abu Zafar Al Munsur</strong>,
+		<a href="https://www.sciencedirect.com/science/article/pii/S0376738821009698">Junghwa Lee</a>,
+		<a href="https://scholar.google.com/citations?user=nUIdBE4AAAAJ&hl=en">Ji Eon Chae</a>,
+		<a href="https://pems.kentech.ac.kr/composition/">Hyoung-Juhn Kim*</a>,
+		<a href="https://scholar.google.com/citations?user=Bjxv0isAAAAJ&hl=en">Chi Hoon Park</a>,
+		<a href="https://scholar.google.co.kr/citations?user=eN05fRgAAAAJ&hl=en">Sang Yong Nam*</a>
+		<a href="https://scholar.google.com/citations?user=284QyDIAAAAJ&hl=en">Tae-Hyun Kim*</a>
+	</br>
+		<em>Journal of Membrane Science</em> 2022, 643, 120029-00000.
+		<a href="https://www.sciencedirect.com/science/article/pii/S0376738821009698">DOI: 10.1016/j.memsci.2021.120029</a>
+	
+	</li>
+	
+	<li>
+		<a href="https://www.sciencedirect.com/science/article/pii/S036031992104074X">
+		<span class="papertitle">Polyamide-Coated Nafion Composite Membranes With Reduced Hydrogen Crossover Produced Via Interfacial Polymerization</span> </a>
+	<br>
+		<a href="https://www.sciencedirect.com/science/article/pii/S036031992104074X">Bon-Hyuk Goo(╪)</a>,
+		<a href="https://scholar.google.com/citations?user=9YXiDbMAAAAJ&hl=ko">Sae Yane Paek(╪)</a>,
+		<strong>Md Abu Zafar Al Munsur</strong>,
+		<a href="https://scholar.google.com/citations?user=DM54z8cAAAAJ&hl=en">Ook Choi</a>,
+		<a href="https://scholar.google.com/citations?user=8z7Jcn8AAAAJ&hl=en">Youngkwang Kim</a>,
+		<a href="https://ohjoongkwon.wixsite.com/eedl/about-me">Oh Joong Kwon</a>,
+		<a href="https://scholar.google.com/citations?user=HZka_SUAAAAJ&hl=en">So Young Lee</a>, 
+		<a href="https://pems.kentech.ac.kr/composition/">Hyoung-Juhn Kim</a>
+		<a href="https://scholar.google.com/citations?user=284QyDIAAAAJ&hl=en">Tae-Hyun Kim*</a>
+	</br>
+		<em>International Journal of Hydrogen Energy</em> 2021, 47, 1202-1216.
+		<a href="https://doi.org/10.1016/j.ijhydene.2021.10.074">DOI:10.1016/j.ijhydene.2021.10.074</a>
+		
+	</li>
+		
+	<li>
+		<a href="https://pubs.acs.org/aamick/article/13/24/28188/369231/Nafion-Based-Proton-Exchange-Membranes-Built-on">
+		<span class="papertitle">Nafion-Based Proton-Exchange Membranes Built on Cross-Linked Semi-Interpenetrating Polymer Networks between Poly(acrylic acid) and Poly(vinyl alcohol)</span> </a>
+	<br>
+		<strong>Md Abu Zafar Al Munsur(╪)</strong>,
+		<a href="https://www.sciencedirect.com/science/article/pii/S036031992104074X">Bon-Hyuk Goo(╪)</a>,
+		<a href="https://scholar.google.com/citations?user=8z7Jcn8AAAAJ&hl=en">Youngkwang Kim</a>,
+		<a href="https://ohjoongkwon.wixsite.com/eedl/about-me">Oh Joong Kwon</a>,
+		<a href="https://scholar.google.com/citations?user=9YXiDbMAAAAJ&hl=ko">Sae Yane Peak</a>
+		<a href="https://scholar.google.com/citations?user=HZka_SUAAAAJ&hl=en">So Young Lee</a>, 
+		<a href="https://pems.kentech.ac.kr/composition/">Hyoung-Juhn Kim</a>
+		<a href="https://scholar.google.com/citations?user=284QyDIAAAAJ&hl=en">Tae-Hyun Kim*</a>
+	</br>
+		<em>ACS Applied Materials & Interfaces</em> 2021, 13(24), 28188-28200.
+		<a href="https://doi.org/10.1021/acsami.1c05662">DOI: 10.1021/acsami.1c05662</a>
+	</li>
+	<li>
+		<a href="https://pubs.acs.org/doi/10.1021/acsaem.0c02319">
+		<span class="papertitle">Sulfonated Poly(Ether Sulfone)-Coated and Blended Nafion Membranes with Enhanced Conductivity and Reduced Hydrogen Permeability</span> </a>
+	<br>
+		<a href="https://www.sciencedirect.com/science/article/pii/S036031992104074X">Bon-Hyuk Goo(╪)</a>,
+		<strong>Md Abu Zafar Al Munsur(╪)</strong>,
+		<a href="https://scholar.google.com/citations?user=DM54z8cAAAAJ&hl=en">Ook Choi</a>,
+		<a href="https://scholar.google.com/citations?user=8z7Jcn8AAAAJ&hl=en">Youngkwang Kim</a>,
+		<a href="https://ohjoongkwon.wixsite.com/eedl/about-me">Oh Joong Kwon</a>,
+		<a href="https://scholar.google.com/citations?user=284QyDIAAAAJ&hl=en">Tae-Hyun Kim*</a>
+	</br>
+		<em>ACS Applied Energy Materials</em> 2020, 12, 11418-11433.
+		<a href="https://pubs.acs.org/doi/full/10.1021/acsami.3c01289">DOI:10.1021/acsaem.0c02319</a>
+		
+	</li>
+		
+		<li>
+			<a href="https://arabjchem.org/highly-efficient-and-metal-free-synthesis-of-tri-and-tetrasubstituted-imidazole-catalyzed-by-3-picolinic-acid/">
+				<span class="papertitle">Highly Efficient And Metal-Free Synthesis Of Tri- And Tetrasubstituted Imidazole Catalyzed By 3-Picolinic Acid</span></a>
+			<br>
+			<strong>Md Abu Zafar Al Munsur*</strong>,
+			<a href="https://profile.ru.ac.bd/public/profile/01062">Harendra Nath Roy</a>, 
+			<a href="https://profile.ru.ac.bd/public/profile/07701">Mohinuddin Khan</a>
+	</br>
+			<em>Arabian Journal of Chemistry</em> 2020, 13, 8807-8814.
+		<a href="https://arabjchem.org/highly-efficient-and-metal-free-synthesis-of-tri-and-tetrasubstituted-imidazole-catalyzed-by-3-picolinic-acid/">DOI:10.1016/j.arabjc.2020.10.010</a>
+		</li>
+		
+	<li>	
+    <a href="https://pubs.acs.org/doi/10.1021/acsami.0c06926">
+      <span class="papertitle">PEG/PPG-PDMS-Based Crosslinked Copolymer Membranes Prepared By ROMP And In Situ Membrane Casting For CO<sub>2</sub> Separation: An Approach To Endow Rubbery Materials With Properties Of Rigid Polymers</span> </a>
+    <br>
+    <a href="https://scholar.google.com/citations?user=fPRLJBoAAAAJ&hl=en">Iqubal Hossain</a>,
+	<a href="https://pubs.acs.org/doi/10.1021/acsami.0c06926">Dongyoung Kim</a>
+	<strong>Abu Zafar Al Munsur(╪)</strong>,
+    <a href="https://pubs.acs.org/doi/10.1021/acsami.0c06926">Jong Min Roh</a>,
+    <a href="http://membrane.hanyang.ac.kr/modules/profile/prof_view.html">ho bum park</a>,
+    <a href="https://scholar.google.com/citations?user=284QyDIAAAAJ&hl=ko">Tae-Hyun Kim*</a>,
+	  </br>
+    <em>ACS Applied Materials & Interfaces</em>, 2020, 12, (24):41279-41292.
+    <a href="https://pubs.acs.org/doi/10.1021/acsami.0c06926">DOI:10.1021/acsami.0c06926</a>
+   
+	</li>
+		
+	<li>
+	<a href="https://www.sciencedirect.com/science/article/pii/S0360319920313781">
+		<span class="papertitle">Quaternary ammonium-functionalized hexyl bis(quaternary ammonium)-mediated partially crosslinked SEBSs as highly conductive and stable anion exchange membranes</span> </a>
+	<br>
+		<strong>Md Abu Zafar Al Munsur</strong>,
+		 <a href="https://scholar.google.com/citations?user=fPRLJBoAAAAJ&hl=en">Iqubal Hossain</a>,
+		<a href="https://scholar.google.co.kr/citations?user=eN05fRgAAAAJ&hl=en">Sang Yong Nam</a>
+		<a href="https://scholar.google.com/citations?user=nUIdBE4AAAAJ&hl=en">Ji Eon Chae</a>,
+		<a href="https://scholar.google.com/citations?user=284QyDIAAAAJ&hl=en">Tae-Hyun Kim*</a>
+	</br>
+		<em>International Journal of Hydrogen Energy</em> 2020, 45, 15658-15671.
+		<a href="https://doi.org/10.1016/j.ijhydene.2020.04.06">DOI:10.1016/j.ijhydene.2020.04.06</a>
+	</li>
 
-        <div class="menu-btn" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
+	<li>
+		<a href="https://www.sciencedirect.com/science/article/pii/S0376738819321052">
+		<span class="papertitle">Hydrophobic-hydrophilic comb-type quaternary ammonium-functionalized SEBS copolymers for high-performance anion exchange membranes</span> </a>
+	<br>
+		<strong>Md Abu Zafar Al Munsur</strong>,
+		 <a href="https://scholar.google.com/citations?user=fPRLJBoAAAAJ&hl=en">Iqubal Hossain</a>,
+		<a href="https://scholar.google.co.kr/citations?user=eN05fRgAAAAJ&hl=en">Sang Yong Nam*</a>
+		<a href="https://scholar.google.com/citations?user=nUIdBE4AAAAJ&hl=en">Ji Eon Chae</a>,
+		<a href="https://scholar.google.com/citations?user=284QyDIAAAAJ&hl=en">Tae-Hyun Kim*</a>
+	</br>
+		<em>Journal of Membrane Science</em> 2020, 599, 117829-00000.
+		<a href="https://doi.org/10.1016/j.memsci.2020.117829">DOI: 10.1016/j.memsci.2020.117829</a>
+	
+	</li>
+		
+	<li>
+	<a href="https://www.mdpi.com/2077-0375/9/9/113">
+		<span class="papertitle">A Facile Synthesis of (PIM-Polyimide)-(6FDA-Durene-Polyimide) Copolymer as Novel Polymer Membranes for CO<sub>2</sub> Separation</span> </a>
+	<br>
+	<a href="https://scholar.google.com/citations?user=fPRLJBoAAAAJ&hl=en">Iqubal Hossain</a>,
+	<strong>Md Abu Zafar Al Munsur</strong>,
+	<a href="https://scholar.google.com/citations?user=DM54z8cAAAAJ&hl=en">Ook Choi</a>,
+	<a href="https://scholar.google.com/citations?user=284QyDIAAAAJ&hl=en">Tae-Hyun Kim*</a>
+	</br>
+	<em>Membranes</em> 2019, 9(9), 113.
+	<a href="https://www.mdpi.com/2077-0375/9/9/113">DOI: 10.3390/membranes9090113</a>
+</li>
 
-    </div>
-</nav>
+<li>
+	<a href="https://doi.org/10.1016/j.seppur.2019.05.014">
+		<span class="papertitle">Bisimidazolium PEG-mediated crosslinked 6FDA-durene polyimide membranes for CO<sub>2</sub>separation</span></a>
+	<br>
+	<a href="https://scholar.google.com/citations?user=fPRLJBoAAAAJ&hl=en">Iqubal Hossain</a>,
+	<strong>Md Abu Zafar Al Munsur</strong>,
+	<a href="https://scholar.google.com/citations?user=DM54z8cAAAAJ&hl=en">Ook Choi</a>,
+	<a href="https://scholar.google.com/citations?user=284QyDIAAAAJ&hl=en">Tae-Hyun Kim*</a>
+	</br>
+	<em>Separation and Purification Technology</em> 2019, 224, 180-188.
+	<a href="https://doi.org/10.1016/j.seppur.2019.05.014">DOI: 10.1016/j.seppur.2019.05.014</a>
+</li>
+		
+<li>	
+    <a href="https://pubs.acs.org/doi/10.1021/acsami.8b13016">
+      <span class="papertitle">Poly(2,6-dimethyl-1,4-phenylene oxide)s with various head groups: effect of head groups on the properties of anion exchange membranes</span> </a>
+    <br>
+    <a href="https://scholar.google.com/citations?user=W_fwObEAAAAJ&hl=en">Haeryang Lim</a>,
+    <a href="https://www.scopus.com/authid/detail.uri?authorId=57194614441">Boryeon Lee</a>,
+    <a href="https://www.scopus.com/authid/detail.uri?authorId=57204757210">Dayoung Yun</a>,
+	<strong>Abu Zafar Al Munsur(╪)</strong>,
+	<a href="https://scholar.google.com/citations?user=nUIdBE4AAAAJ&hl=en">Ji Eon Chae</a>,
+	<a href="https://scholar.google.com/citations?user=HZka_SUAAAAJ&hl=en">So Young Lee</a>,
+	<a href="https://pems.kentech.ac.kr/composition/">Hyoung-Juhn Kim</a>
+	<a href="https://scholar.google.co.kr/citations?user=eN05fRgAAAAJ&hl=en">Sang Yong Nam</a>
+	<a href="https://scholar.google.com/citations?user=Bjxv0isAAAAJ&hl=en">Chi Hoon Park</a>,
+    <a href="https://scholar.google.com/citations?user=284QyDIAAAAJ&hl=ko">Tae-Hyun Kim*</a>,
+	  </br>
+    <em>ACS Applied Materials & Interfaces</em>, 2028, 10, (48):41279-41292.
+    <a href="https://doi.org/10.1021/acsami.8b13016">DOI: 10.1021/acsami.8b13016</a>
+	</li>
+		
+	<li>
+	<a href="https://www.tandfonline.com/doi/full/10.1080/00397911.2016.1192650"</a>
+	<span class="papertitle">Efficient and convenient synthesis of 1H-pyrazolo[1,2-b]phthalazine-5,10-dione derivatives mediated by L-proline</span></a>
+	<br>
+	<a href="https://profile.ru.ac.bd/public/profile/01062">Harendra Nath Roy*</a>, 
+	<a href="https://profile.ru.ac.bd/public/profile/07701">Mohinuddin Khan</a>
+	<strong>Md Abu Zafar Al Munsur</strong>,
+	</br>
+	<em>Synthetic Communications</em> 2016, 46(16), 1370-1376.
+	<a href="https://doi.org/10.1080/00397911.2016.1192650">DOI: 10.1080/00397911.2016.1192650</a>
+	<a href="http://onlinelibrary.wiley.com/doi/10.1002/chin.201652332/abstract">(Selected Abstracted in CHemInform)</a></font></strong></div></div>
+	</li>
+	</ol>
+				  
+          </tbody></table>
 
-
-<section class="hero" id="home">
-
-    <div class="container hero-grid">
-
-        <div>
-
-            <span class="hero-label">
-                RESEARCHER • HYDROGEN ENERGY • POLYMER SCIENCE
-            </span>
-
-            <h1>
-                Md Abu Zafar<br>
-                <span>Al Munsur</span>
-            </h1>
-
-            <h2>
-                Postdoctoral Fellow · Korea Institute of Energy Technology
-            </h2>
-
-            <p>
-                Researcher specializing in polymer electrolyte membranes,
-                hydrogen energy, fuel cells, water electrolysis, carbon dioxide
-                separation, and advanced polymeric materials.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#research" class="btn btn-primary">
-                    <i class="fas fa-flask"></i>
-                    Explore Research
-                </a>
-
-                <a href="#publications" class="btn btn-outline">
-                    <i class="fas fa-book"></i>
-                    Publications
-                </a>
-
-                <a href="https://linkedin.com/in/mazams"
-                   target="_blank"
-                   class="btn btn-outline">
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="hero-card">
-
-            <div class="profile-icon">
-                <i class="fas fa-atom"></i>
-            </div>
-
-            <h3>Academic Profile</h3>
-
-            <p>
-                <strong>Current Position:</strong><br>
-                Postdoctoral Fellow
-            </p>
-
-            <p>
-                <strong>Institute:</strong><br>
-                Institute of Hydrogen Energy, KENTECH
-            </p>
-
-            <p>
-                <strong>Ph.D.:</strong><br>
-                Chemistry · Incheon National University
-            </p>
-
-            <p>
-                <strong>Research Focus:</strong><br>
-                Polymer Electrolytes & Hydrogen Energy
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="stats">
-
-    <div class="container stats-grid">
-
-        <div class="stat">
-            <h3>14+</h3>
-            <p>Peer-Reviewed Journal Articles</p>
-        </div>
-
-        <div class="stat">
-            <h3>6</h3>
-            <p>Patents</p>
-        </div>
-
-        <div class="stat">
-            <h3>16+</h3>
-            <p>Conference Presentations</p>
-        </div>
-
-        <div class="stat">
-            <h3>10+</h3>
-            <p>Years of Research Experience</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="about">
-
-    <div class="container">
-
-        <div class="section-title">
-            <span>About Me</span>
-            <h2>Researcher & Materials Scientist</h2>
-        </div>
-
-        <div class="about-grid">
-
-            <div class="about-card">
-
-                <h3>Professional Profile</h3>
-
-                <p>
-                    I am a researcher working at the intersection of polymer
-                    science, electrochemistry, membrane technology and
-                    hydrogen energy.
-                </p>
-
+          
+					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:20px;"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+           
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #fcb97d;">
+								 <h2>Micropapers</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
                 <br>
-
-                <p>
-                    My research involves the design, synthesis,
-                    characterization and application of functional polymers
-                    and polymer electrolyte membranes for energy conversion,
-                    hydrogen production and gas separation technologies.
-                </p>
-
-            </div>
-
-
-            <div class="about-card">
-
-                <h3>Academic Background</h3>
-
-                <p>
-                    <strong>Ph.D. in Chemistry</strong><br>
-                    Incheon National University, South Korea
-                </p>
-
+                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
                 <br>
-
-                <p>
-                    Major: Organic Materials Synthesis
-                </p>
-
+                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
                 <br>
+                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
+              </td>
+            </tr>
 
-                <p>
-                    <strong>M.Sc. in Chemistry</strong><br>
-                    University of Rajshahi, Bangladesh
-                </p>
 
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #aaba9e;">
+								 <h2>Recorded Talks</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <a href="https://www.youtube.com/watch?v=hFlF33JZbA0">Radiance Fields and the Future of Generative Media, 2025</a><br>				  
+                <a href="https://www.youtube.com/watch?v=h9vq_65eDas">View Dependent Podcast, 2024</a><br>
+                <a href="https://www.youtube.com/watch?v=4tDhYsFuEqo">Bay Area Robotics Symposium, 2023
+</a><br>
+                <a href="https://youtu.be/TvWkwDYtBP4?t=7604">EGSR Keynote, 2021</a><br>
+				<a href="https://www.youtube.com/watch?v=nRyOzHpcr4Q">TUM AI Lecture Series, 2020</a><br>
+				<a href="https://www.youtube.com/watch?v=HfJpQCBTqZs">Vision & Graphics Seminar at MIT, 2020</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #c6b89e;">
+								 <h2>Academic Service</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <a href="https://iccv.thecvf.com/">Lead Area Chair, ICCV 2025</a>
                 <br>
-
-                <p>
-                    <strong>B.Sc. in Chemistry</strong><br>
-                    University of Rajshahi, Bangladesh
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="research">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>Research</span>
-
-            <h2>Research Areas</h2>
-
-            <p>
-                Development of advanced polymeric materials for energy,
-                electrochemical and separation applications.
-            </p>
-
-        </div>
-
-
-        <div class="research-list">
-
-            <div class="research-item">
-                <strong>Hydrogen Energy</strong><br>
-                Polymer electrolyte membranes, hydrogen production and
-                electrochemical energy conversion.
-            </div>
-
-            <div class="research-item">
-                <strong>Fuel Cells</strong><br>
-                Proton exchange membrane fuel cells and anion exchange
-                membrane fuel cells, including membrane electrode assemblies.
-            </div>
-
-            <div class="research-item">
-                <strong>Water Electrolysis</strong><br>
-                Development of low-cost and high-performance polymer
-                electrolyte membranes for hydrogen generation.
-            </div>
-
-            <div class="research-item">
-                <strong>Carbon Capture & Separation</strong><br>
-                Development of robust polymeric membranes for CO₂ separation
-                and sequestration.
-            </div>
-
-            <div class="research-item">
-                <strong>Membrane Technology</strong><br>
-                Nanofiltration membranes, ion-exchange membranes and
-                advanced polymeric membrane architectures.
-            </div>
-
-            <div class="research-item">
-                <strong>Advanced Polymer Materials</strong><br>
-                Polymer synthesis, molecular design, interpenetrating polymer
-                networks, functional polymers and nanocomposite membranes.
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="experience">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>Career</span>
-            <h2>Professional Experience</h2>
-
-        </div>
-
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="date">
-                    April 2022 – Present
-                </div>
-
-                <h3>Postdoctoral Fellow</h3>
-
-                <p class="institution">
-                    Korea Institute of Energy Technology (KENTECH)
-                </p>
-
-                <p>
-                    Institute of Hydrogen Energy
-                </p>
-
-            </div>
-
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="date">
-                    March 2021 – February 2022
-                </div>
-
-                <h3>Presidential Postdoctoral Fellow</h3>
-
-                <p class="institution">
-                    Incheon National University
-                </p>
-
-                <p>
-                    Department of Chemistry, College of Natural Sciences
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="education">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>Education</span>
-            <h2>Academic Journey</h2>
-
-        </div>
-
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="date">
-                    2016 – 2021
-                </div>
-
-                <h3>Doctor of Philosophy in Chemistry</h3>
-
-                <p class="institution">
-                    Incheon National University, South Korea
-                </p>
-
-                <p>
-                    Major: Organic Materials Synthesis
-                </p>
-
-                <p>
-                    Dissertation: Development of ion-conducting polymers
-                    with enhanced properties by surface-coating and
-                    molecular control strategies.
-                </p>
-
-            </div>
-
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="date">
-                    2013 – 2016
-                </div>
-
-                <h3>Master of Science in Chemistry</h3>
-
-                <p class="institution">
-                    University of Rajshahi, Bangladesh
-                </p>
-
-                <p>
-                    Major: Synthetic Organic Chemistry
-                </p>
-
-            </div>
-
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="date">
-                    2008 – 2013
-                </div>
-
-                <h3>Bachelor of Science in Chemistry</h3>
-
-                <p class="institution">
-                    University of Rajshahi, Bangladesh
-                </p>
-
-                <p>
-                    Minor: Physics and Mathematics
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<section id="publications">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>Research Output</span>
-            <h2>Selected Publications</h2>
-
-            <p>
-                Peer-reviewed research publications in polymer science,
-                membrane technology and hydrogen energy.
-            </p>
-
-        </div>
-
-
-
-        <div class="publication">
-
-            <span class="publication-number">14.</span>
-
-            <h3>
-                Long-Term, Stable Alkaline Electrolysis with a Durable
-                Crystalline Polybenzimidazole Membrane.
-            </h3>
-
-            <p class="journal">
-                Small, 2025, 21, e02810.
-            </p>
-
-            <a class="doi"
-               href="https://doi.org/10.1002/smll.202502810"
-               target="_blank">
-                DOI →
-            </a>
-
-        </div>
-
-
-        <div class="publication">
-
-            <span class="publication-number">13.</span>
-
-            <h3>
-                Development of High-performance Polymer Electrolyte
-                Membranes through the Application of Quantum Dot Coatings
-                to Nafion Membranes.
-            </h3>
-
-            <p class="journal">
-                ACS Applied Materials & Interfaces, 2023, 15, 15616–15624.
-            </p>
-
-            <a class="doi"
-               href="https://doi.org/10.1021/acsami.3c01289"
-               target="_blank">
-                DOI →
-            </a>
-
-        </div>
-
-
-        <div class="publication">
-
-            <span class="publication-number">12.</span>
-
-            <h3>
-                Hexyl quaternary ammonium- and fluorobenzoyl-grafted SEBS
-                polymers as hydrophilic-hydrophobic comb-type anion exchange
-                membranes.
-            </h3>
-
-            <p class="journal">
-                Journal of Membrane Science, 2022, 643, 120029.
-            </p>
-
-            <a class="doi"
-               href="https://doi.org/10.1016/j.memsci.2021.120029"
-               target="_blank">
-                DOI →
-            </a>
-
-        </div>
-
-
-        <div class="publication">
-
-            <span class="publication-number">11.</span>
-
-            <h3>
-                Polyamide-coated Nafion composite membranes with reduced
-                hydrogen crossover produced via interfacial polymerization.
-            </h3>
-
-            <p class="journal">
-                International Journal of Hydrogen Energy, 2021, 47, 1202–1216.
-            </p>
-
-            <a class="doi"
-               href="https://doi.org/10.1016/j.ijhydene.2021.10.074"
-               target="_blank">
-                DOI →
-            </a>
-
-        </div>
-
-
-        <div class="publication">
-
-            <span class="publication-number">10.</span>
-
-            <h3>
-                Nafion-based proton exchange membranes with a cross-linked
-                semi-interpenetrating polymer network between PVA and PAA.
-            </h3>
-
-            <p class="journal">
-                ACS Applied Materials & Interfaces, 2021, 13, 28188–28200.
-            </p>
-
-            <a class="doi"
-               href="https://doi.org/10.1021/acsami.1c05662"
-               target="_blank">
-                DOI →
-            </a>
-
-        </div>
-
-
-        <div class="publication">
-
-            <span class="publication-number">9.</span>
-
-            <h3>
-                Sulfonated Poly(Ether Sulfone)-Coated and Blended Nafion
-                Membranes with Enhanced Conductivity and Reduced Hydrogen
-                Permeability.
-            </h3>
-
-            <p class="journal">
-                ACS Applied Energy Materials, 2020, 3, 11418–11433.
-            </p>
-
-            <a class="doi"
-               href="https://doi.org/10.1021/acsaem.0c02319"
-               target="_blank">
-                DOI →
-            </a>
-
-        </div>
-
-
-        <div class="publication">
-
-            <span class="publication-number">8.</span>
-
-            <h3>
-                Highly Efficient and Metal-Free Synthesis of
-                Tri- and Tetrasubstituted Imidazole Catalyzed by
-                3-Picolinic Acid.
-            </h3>
-
-            <p class="journal">
-                Arabian Journal of Chemistry, 2020, 13, 8807–8814.
-            </p>
-
-            <a class="doi"
-               href="https://doi.org/10.1016/j.arabjc.2020.10.010"
-               target="_blank">
-                DOI →
-            </a>
-
-        </div>
-
-
-        <div class="publication">
-
-            <span class="publication-number">7.</span>
-
-            <h3>
-                PEG/PPG-PDMS-based Crosslinked Copolymer Membranes Prepared
-                by ROMP and in situ Membrane Casting for CO₂ Separation.
-            </h3>
-
-            <p class="journal">
-                ACS Applied Materials & Interfaces, 2020, 12, 27286–27299.
-            </p>
-
-            <a class="doi"
-               href="https://doi.org/10.1021/acsami.0c06926"
-               target="_blank">
-                DOI →
-            </a>
-
-        </div>
-
-
-        <div style="text-align:center; margin-top:30px;">
-
-            <a href="https://scholar.google.com/citations?user=6ayEY-gAAAAJ"
-               target="_blank"
-               class="btn btn-primary">
-
-                <i class="fas fa-graduation-cap"></i>
-                View Google Scholar
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="patents">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>Innovation</span>
-            <h2>Patents</h2>
-
-        </div>
-
-
-        <div class="patent-grid">
-
-            <div class="patent">
-
-                <i class="fas fa-lightbulb"></i>
-
-                <h3>
-                    Carbon quantum dot-coated polymer electrolyte membranes
-                    and method thereof
-                </h3>
-
-                <p>
-                    Patent KR102867798 · Issued April 24, 2023
-                </p>
-
-            </div>
-
-
-            <div class="patent">
-
-                <i class="fas fa-lightbulb"></i>
-
-                <h3>
-                    Anion exchange membranes comprising
-                    hydrophilic-hydrophobic comb-type SEBS
-                </h3>
-
-                <p>
-                    Patent KR102600485 · Issued November 8, 2023
-                </p>
-
-            </div>
-
-
-            <div class="patent">
-
-                <i class="fas fa-lightbulb"></i>
-
-                <h3>
-                    Nafion-based composite membrane for proton exchange
-                    membrane applications
-                </h3>
-
-                <p>
-                    Patent KR102597827 · Issued November 3, 2023
-                </p>
-
-            </div>
-
-
-            <div class="patent">
-
-                <i class="fas fa-lightbulb"></i>
-
-                <h3>
-                    Sulfonated polyethersulfone copolymer and composite
-                    ion-exchange membranes
-                </h3>
-
-                <p>
-                    Patent KR102418820 · Issued July 11, 2022
-                </p>
-
-            </div>
-
-
-            <div class="patent">
-
-                <i class="fas fa-lightbulb"></i>
-
-                <h3>
-                    Anion exchange membrane and method for preparing the same
-                </h3>
-
-                <p>
-                    Patent KR102217838 · Issued February 22, 2021
-                </p>
-
-            </div>
-
-
-            <div class="patent">
-
-                <i class="fas fa-lightbulb"></i>
-
-                <h3>
-                    Method of Increasing Solubility of Polyvinyl Alcohol
-                </h3>
-
-                <p>
-                    Patent KR102030501 · Issued October 10, 2019
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="skills">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>Expertise</span>
-            <h2>Technical Skills</h2>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-
-                <h3>
-                    <i class="fas fa-flask"></i>
-                    Polymer Synthesis
-                </h3>
-
-                <div class="tags">
-                    <span class="tag">ROMP</span>
-                    <span class="tag">RCM</span>
-                    <span class="tag">Cross-metathesis</span>
-                    <span class="tag">ATRP</span>
-                    <span class="tag">RAFT</span>
-                    <span class="tag">Polycondensation</span>
-                    <span class="tag">PBI</span>
-                    <span class="tag">ABPBI</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    <i class="fas fa-microscope"></i>
-                    Characterization
-                </h3>
-
-                <div class="tags">
-                    <span class="tag">TGA</span>
-                    <span class="tag">DMA</span>
-                    <span class="tag">DSC</span>
-                    <span class="tag">FTIR</span>
-                    <span class="tag">NMR</span>
-                    <span class="tag">XRD</span>
-                    <span class="tag">XPS</span>
-                    <span class="tag">TEM</span>
-                    <span class="tag">SEM</span>
-                    <span class="tag">AFM</span>
-                    <span class="tag">EIS</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    <i class="fas fa-cogs"></i>
-                    Membrane & Device
-                </h3>
-
-                <div class="tags">
-                    <span class="tag">MEA</span>
-                    <span class="tag">CCM</span>
-                    <span class="tag">CCS</span>
-                    <span class="tag">Decal</span>
-                    <span class="tag">Spin coating</span>
-                    <span class="tag">Doctor blade</span>
-                    <span class="tag">Spray coating</span>
-                    <span class="tag">Fuel cells</span>
-                    <span class="tag">Electrolysis</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    <i class="fas fa-laptop-code"></i>
-                    Software
-                </h3>
-
-                <div class="tags">
-                    <span class="tag">OriginPro</span>
-                    <span class="tag">SigmaPlot</span>
-                    <span class="tag">ChemDraw</span>
-                    <span class="tag">ACDLABS</span>
-                    <span class="tag">ChemOffice</span>
-                    <span class="tag">Adobe Photoshop</span>
-                    <span class="tag">Mendeley</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    <i class="fas fa-users"></i>
-                    Mentoring
-                </h3>
-
-                <p>
-                    Trained undergraduate and graduate students in basic
-                    organic material synthesis experiments and laboratory
-                    techniques.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    Teaching
-                </h3>
-
-                <p>
-                    Experience tutoring O-level, A-level and undergraduate
-                    students in basic and advanced organic chemistry.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="awards">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>Recognition</span>
-            <h2>Awards & Fellowships</h2>
-
-        </div>
-
-
-        <div class="award-grid">
-
-            <div class="award">
-
-                <i class="fas fa-award"></i>
-
-                <div>
-                    <h3>Graduate Research Excellence Award</h3>
-                    <p>
-                        Institute of Basic Science, Incheon National University · 2019
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="award">
-
-                <i class="fas fa-award"></i>
-
-                <div>
-                    <h3>Excellent Oral Presentation Award</h3>
-                    <p>
-                        The Membrane Society of Korea · 2021
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="award">
-
-                <i class="fas fa-graduation-cap"></i>
-
-                <div>
-                    <h3>Presidential Postdoctoral Research Assistance</h3>
-                    <p>
-                        Incheon National University · 2021
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="award">
-
-                <i class="fas fa-graduation-cap"></i>
-
-                <div>
-                    <h3>100% Tuition Fee Waiver Fellowship</h3>
-                    <p>
-                        Incheon National University
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="reviewing">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>Academic Service</span>
-            <h2>Peer Reviewer</h2>
-
-        </div>
-
-        <div class="review-box">
-
-            <i class="fas fa-user-check"></i>
-
-            <p>
-                Reviewer for journals published by ACS, Wiley, RSC,
-                Elsevier, Springer Nature, IOP, SAGE and other international
-                publishers.
-            </p>
-
-            <br>
-
-            <p>
-                Areas include polymer materials, membrane science,
-                hydrogen energy, electrochemistry, fuel cells,
-                energy storage and sustainable technologies.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section>
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>Speaking</span>
-            <h2>Invited Talk</h2>
-
-        </div>
-
-        <div class="about-card">
-
-            <h3>
-                Hydrogen is an Energy Vector for Next Generation Energy Solutions
-            </h3>
-
-            <p>
-                Research seminar for graduate/postgraduate students and faculty
-            </p>
-
-            <p>
-                University of Rajshahi, Bangladesh · October 20, 2025
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="contact" class="contact">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>Get In Touch</span>
-            <h2>Contact</h2>
-
-        </div>
-
-
-        <div class="contact-grid">
-
-            <div class="contact-card">
-
-                <div class="contact-item">
-
-                    <i class="fas fa-envelope"></i>
-
-                    <div>
-                        <strong>Email</strong>
-                        <a href="mailto:mazam@kentech.ac.kr">
-                            mazam@kentech.ac.kr
-                        </a>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <i class="fas fa-building"></i>
-
-                    <div>
-                        <strong>Affiliation</strong>
-                        Institute of Hydrogen Energy<br>
-                        Korea Institute of Energy Technology
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <i class="fas fa-map-marker-alt"></i>
-
-                    <div>
-                        <strong>Location</strong>
-                        Naju-si, Jeollanam-do, South Korea
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <i class="fas fa-fingerprint"></i>
-
-                    <div>
-                        <strong>ORCID</strong>
-                        0000-0002-0301-6812
-                    </div>
-
-                </div>
-
-
-                <div class="social-links">
-
-                    <a href="https://orcid.org/0000-0002-0301-6812"
-                       target="_blank"
-                       title="ORCID">
-                        <i class="fab fa-orcid"></i>
-                    </a>
-
-                    <a href="https://scholar.google.com/citations?user=6ayEY-gAAAAJ"
-                       target="_blank"
-                       title="Google Scholar">
-                        <i class="fas fa-graduation-cap"></i>
-                    </a>
-
-                    <a href="https://linkedin.com/in/mazams"
-                       target="_blank"
-                       title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-
-                    <a href="mailto:mazam@kentech.ac.kr"
-                       title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="contact-card">
-
-                <h3>Research Collaboration</h3>
-
-                <p>
-                    I am interested in research collaborations involving
-                    polymer electrolyte membranes, hydrogen production,
-                    fuel cells, water electrolysis, membrane technology,
-                    carbon capture and advanced polymer materials.
-                </p>
-
+                <a href="https://cvpr.thecvf.com/Conferences/2025/Organizers">Lead Area Chair, CVPR 2025</a>
                 <br>
+                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
+                <br>
+                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
+                <br>
+                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
+                <br>
+                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
+                <br>
+                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+                <br>
+                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+              </td>
+            </tr>
+						
+						
+           
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #edd892;">
+								 <h2>Teaching</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <a href="https://www.inu.ac.kr/chem_eng/9903/subview.do">Graduate & Undergraduate Student Instructor, Basic Organic Synthesis 2016-2021</a>
+                <br>
+                <a href="https://kentech.ac.kr/main.do">Graduate Student Instructor, Basic & advanced Organic Synthesis 2022-202x</a>
+                <br>
+                <a href="https://sites.google.com/view/functional-nano-english/members">Synthesis of SEBS- derivative via Fridel-Craft acylation reaction, two Gyeongsang National University students in 2018 & 2019</a>
+              </td>
+            </tr>
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+	
+	<script>
 
-                <a href="mailto:mazam@kentech.ac.kr"
-                   class="btn btn-primary">
+    function toggleMenu() 
+	{ const navLinks = document.getElementById("navLinks");
 
-                    <i class="fas fa-paper-plane"></i>
-                    Contact Me
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<footer>
-
-    <p>
-        © <span id="year"></span>
-        <strong>Md Abu Zafar Al Munsur</strong>.
-        All Rights Reserved.
-    </p>
-
-    <p>
-        Academic Portfolio · Hydrogen Energy · Polymer Science
-    </p>
-
-</footer>
-
-
-<script>
-
-    function toggleMenu() {
-
-        const navLinks = document.getElementById("navLinks");
-
-        navLinks.classList.toggle("active");
-
-    }
+        navLinks.classList.toggle("active"); }
 
 
     // Automatically update copyright year
@@ -1876,7 +479,4 @@
     });
 
 </script>
-
-
-</body>
 </html>
